@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/image_view_3"
-        android:layout_width="70"
+        android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
@@ -43,7 +43,7 @@
 
     <ImageView
         android:id="@+id/image_view_2"
-        android:layout_width="70"
+        android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
@@ -52,24 +52,11 @@
         app:layout_constraintTop_toBottomOf="@+id/image_view_1"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="?attr/actionModeCloseDrawable"
-        app:title="Lobby" />
-
     <TextView
         android:id="@+id/team_name_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:text="TeamNameABC"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -77,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/team_member_title"
@@ -85,10 +72,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:text="Team members: 3/10"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/code_label" />
@@ -110,7 +97,7 @@
         android:id="@+id/code_sublabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="6dp"
         android:text="Code:"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -121,11 +108,11 @@
 
     <ImageView
         android:id="@+id/image_view_1"
-        android:layout_width="70"
+        android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team_member_title"
         tools:srcCompat="@tools:sample/avatars" />
