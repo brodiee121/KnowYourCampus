@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KnowYourCampus</string>
+    <string name="title_activity_solo_name_input">SoloNameInputActivity</string>
+    <string name="title_activity_test">TestActivity</string>
 </resources>

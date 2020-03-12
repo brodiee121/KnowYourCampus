@@ -6,21 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class TeamLobbyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_team_lobby);
     }
 
-    public void startTour(View view) {
-        Intent intent = new Intent(this, SoloNameInputActivity.class);
-        startActivity(intent);
-    }
-
-    public void viewLeaderboard(View view) {
-        //FIXME: should point to 'Leaderboard' screen, not 'Home' screen
+    public void clickedReady(View view) {
+        //FIXME: should link to 'How to play' screen, not 'Home' screen
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
