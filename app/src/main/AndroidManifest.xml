@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".QuizPageTwoActivity" />
+        <activity android:name=".QuizPageThreeActivity" />
+        <activity android:name=".QuizPageFourActivity" />
+        <activity android:name=".QuizFinalscoreActivity" />
+        <activity android:name=".QuizPageOneActivity" />
+        <activity android:name=".StartQuizActivity" />
+        <activity android:name=".LeaderboardActivity" />
         <activity android:name=".TeamLobbyActivity"></activity>
         <activity android:name=".TeamNameInputActivity" />
         <activity android:name=".TeamJoinActivity" />
