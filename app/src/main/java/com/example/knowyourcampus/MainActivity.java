@@ -1,10 +1,12 @@
 package com.example.knowyourcampus;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,11 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void startTour(View view) {
         Intent intent = new Intent(this, SoloNameInputActivity.class);
-        startActivity(intent);
-    }
+    startActivity(intent);
+}
 
     public void viewLeaderboard(View view) {
-        //FIXME: should point to 'Leaderboard' screen, not 'Home' screen
         Intent intent = new Intent(this, LeaderboardActivity.class);
         startActivity(intent);
     }

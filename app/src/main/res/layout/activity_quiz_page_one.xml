@@ -73,8 +73,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="263dp"
-        android:layout_height="24dp"
+        android:layout_width="264dp"
+        android:layout_height="46dp"
         android:layout_marginTop="112dp"
         android:text="Approximately how many books does the library contain?"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"

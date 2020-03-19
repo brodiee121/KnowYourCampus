@@ -2,13 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.knowyourcampus">
 
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".QRResult"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity android:name=".QRScanning" />
+        <activity android:name=".FindLocation" />
+        <activity android:name=".HowToPlay" />
+        <activity android:name=".TaskARResult" />
+        <activity android:name=".TaskARCamera" />
+        <activity android:name=".TaskARIntroduction" />
+        <activity android:name=".TaskQuestionActivity" />
+        <activity android:name=".TaskQuestionIntroduction" />
+        <activity
+            android:name=".TaskListActivity"
+            android:exported="true" />
+        <activity android:name=".Task4Completed" />
+        <activity android:name=".Task4Camera" />
+        <activity android:name=".Task4Main" />
+        <activity android:name=".Task3Completed" />
+        <activity android:name=".Task3Camera" />
+        <activity android:name=".Task3Main" />
         <activity android:name=".QuizPageTwoActivity" />
         <activity android:name=".QuizPageThreeActivity" />
         <activity android:name=".QuizPageFourActivity" />
@@ -16,7 +46,7 @@
         <activity android:name=".QuizPageOneActivity" />
         <activity android:name=".StartQuizActivity" />
         <activity android:name=".LeaderboardActivity" />
-        <activity android:name=".TeamLobbyActivity"></activity>
+        <activity android:name=".TeamLobbyActivity" />
         <activity android:name=".TeamNameInputActivity" />
         <activity android:name=".TeamJoinActivity" />
         <activity android:name=".TeamRoleSelectionActivity" />

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <Button
+        android:id="@+id/bt_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_task_info_reward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:background="#FFE0B2"
+        android:includeFontPadding="true"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

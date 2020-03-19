@@ -13,8 +13,8 @@ public class PlayerSelectionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_solo_name_input);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setContentView(R.layout.activity_player_selection);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -32,8 +32,7 @@ public class PlayerSelectionActivity extends AppCompatActivity {
     }
 
     public void clickedSolo(View view) {
-        //FIXME: should link to 'How to play' screen, not 'Home' screen
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HowToPlay.class);
         startActivity(intent);
     }
 

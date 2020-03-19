@@ -2,4 +2,7 @@
     <string name="app_name">KnowYourCampus</string>
     <string name="title_activity_solo_name_input">SoloNameInputActivity</string>
     <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_task_list">TaskList</string>
+    <string name="task_list_description">Complete the following tasks to learn more about The University Library. When finished, you\'ll be able to test your knowledge in a quiz!</string>
+    <string name="task_list_demo_title">The University Library</string>
 </resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task4Camera">
+
+    <TextView
+        android:id="@+id/TaskNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="116dp"
+        android:text="Task #4"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:text="Selfie Time"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TaskNumber" />
+
+
+    <ImageView
+        android:id="@+id/capturedImage"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TaskName"/>
+
+    <TextView
+        android:id="@+id/match"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="\u2713 Found you!"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#33C244"
+        app:layout_constraintTop_toBottomOf="@+id/capturedImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/buildingMatch"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="\u2713 Found the library!"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#33C244"
+        app:layout_constraintTop_toBottomOf="@+id/match"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
